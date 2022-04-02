@@ -1,15 +1,4 @@
 /* GAME FUNCTIONS */
-<<<<<<< HEAD
-
-// function to generate a random numeric value
-var randomNumber = function(min, max) {
-  var value = Math.floor(Math.random() * (max - min + 1) + min);
-
-  return value;
-};
-
-=======
->>>>>>> develop
 
 // function to generate a random numeric value
 var randomNumber = function(min, max) {
@@ -248,10 +237,6 @@ var shop = function() {
 /* END GAME FUNCTIONS */
 
 /* GAME INFORMATION / VARIABLES */
-<<<<<<< HEAD
-
-// player information
-=======
 
 // player information
 
@@ -266,7 +251,6 @@ var getPlayerName = function() {
 };
 
 /* GAME INFORMATION / VARIABLES */
->>>>>>> develop
 var playerInfo = {
   name: getPlayerName(),
   health: 100,
