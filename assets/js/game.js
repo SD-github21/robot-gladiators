@@ -41,14 +41,24 @@ var fightOrSkip = function () {
 //fight function now with parameter for enemy's name
 var fight = function(enemy) {
   // keep track of who goes first
-  var isPlayerTurn = true;
+  // var isPlayerTurn = true;
+  // var randomNum = Math.random();
+  // // randomly change turn order
+  // if (randomNum > 0.5) {
+  //   isPlayerTurn = false;
+  // }
+
+  // console.log(randomNum);
+  // console.log(isPlayerTurn);
+
+  while (playerInfo.health > 0 && enemy.health > 0) {
 
   // randomly change turn order
-  if (Math.random() > 0.5) {
+    var isPlayerTurn = true;
+    if (Math.random() > 0.5) {
     isPlayerTurn = false;
   }
 
-  while (playerInfo.health > 0 && enemy.health > 0) {
     if (isPlayerTurn) {
       // ask player if they'd like to fight or skip using fightOrSkip function
       if (fightOrSkip()) {
@@ -110,7 +120,7 @@ var fight = function(enemy) {
       }
     }
     // switch turn order for next round
-    isPlayerTurn = !isPlayerTurn;
+    // isPlayerTurn = !isPlayerTurn;
   }
 };
     
